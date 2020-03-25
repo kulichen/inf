@@ -13,6 +13,11 @@ int yrav(double a, double b, double c, double *x1, double *x2)
 		//выражение неверно с != 0
 		return -1;  
 	}
+	if (a != 0 && b == 0 && c == 0) {
+		//один корень
+		*x1 = 0;
+		return 1;
+	}
 	if (a == 0 && b != 0) {
 		if (c == 0) {
 			//один корень

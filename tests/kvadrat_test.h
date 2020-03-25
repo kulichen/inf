@@ -65,4 +65,16 @@ TEST(yravTest, num4) {
     ASSERT_EQ(yrav(1, 2, 2, x1, x2), 0);
 }
 
+TEST(yravTest, num5) {
+	double a;
+	double *x1; 
+	x1 = &a;
+	double b;
+	double *x2; 
+	x2 = &b;
+	yrav(2, 0, 0, x1, x2);
+    ASSERT_EQ(yrav(2, 0, 0, x1, x2), 1);
+    ASSERT_EQ(*x1, 0);
+}
+
 #endif // YRAV_H
