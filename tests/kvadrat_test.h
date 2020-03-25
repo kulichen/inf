@@ -8,19 +8,16 @@ extern "C" {
 #include <math.h>
 #include <stdio.h>
 }
-//izm
+
 TEST(yravTest, num0) {
 	double a;
-	double *x1; 
-	x1 = &a;
-	double b;
-	double *x2; 
-	x2 = &b;
 
-	yrav(1, 0, -4, x1, x2);
-	ASSERT_EQ(yrav(1, 0, -4, x1, x2), 2);
-    ASSERT_EQ(*x1, 2);
-    ASSERT_EQ(*x2, -2);
+	double b;
+
+	yrav(1, 0, -4, &a, &b);
+	ASSERT_EQ(yrav(1, 0, -4, &a, &b), 2);
+    ASSERT_EQ(&a, 2);
+    ASSERT_EQ(&b, -2);
 }
 
 TEST(yravTest, num1) {
