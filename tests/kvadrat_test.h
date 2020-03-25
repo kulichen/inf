@@ -8,7 +8,7 @@ extern "C" {
 #include <math.h>
 #include <stdio.h>
 }
-
+//izm
 TEST(yravTest, num0) {
 	double a;
 	double *x1; 
