@@ -17,9 +17,12 @@ LIBS += -lgcov
 
 HEADERS +=     tst_test1.h \
     ../app/myfunc.h \
-    fibonachi_test.h
+    fibonachi_test.h \
+	kvadrat_test.h
+	
 
 SOURCES +=     main.cpp \
-    ../app/myfunc.c
+    ../app/myfunc.c \
+	../app/yrav.c
 
 INCLUDEPATH += ../app

@@ -4,11 +4,13 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.c \
-    myfunc.c
+    myfunc.c \
+    yrav.c
 
 HEADERS += \
-    myfunc.h
-
+    myfunc.h \
+    yrav.h
+    
 QMAKE_CFLAGS += -Wall -Wextra -Werror
 
 # gcov
