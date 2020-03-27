@@ -16,6 +16,7 @@ LIBS += -lgcov
 
 
 HEADERS +=     tst_test1.h \
+    ../app/yrav.h \
     ../app/myfunc.h \
     fibonachi_test.h \
 	kvadrat_test.h
