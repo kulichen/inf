@@ -9,7 +9,7 @@ extern "C" {
 #include <stdio.h>
 }
 
-TEST(yravTest, num0) {
+TEST(yravTest, num0) { // D > 0 (два корня)
 	double a;
 
 	double b;
@@ -20,7 +20,7 @@ TEST(yravTest, num0) {
     ASSERT_EQ(b, -2);
 }
 
-TEST(yravTest, num1) {
+TEST(yravTest, num1) { //правильность ввода (квадратное уравнение)
 	double a;
 
 	double b;
@@ -28,7 +28,7 @@ TEST(yravTest, num1) {
     ASSERT_EQ(yrav(0, 2, 0, &a, &b), -1);
 }
 
-TEST(yravTest, num2) {
+TEST(yravTest, num2) { // х^2 = 0
 	double a;
 
 	double b;
@@ -37,7 +37,7 @@ TEST(yravTest, num2) {
 	ASSERT_EQ(a, 0);
 }
 
-TEST(yravTest, num3) {
+TEST(yravTest, num3) { // D = 0
 	double a;
 
 	double b;
@@ -46,7 +46,7 @@ TEST(yravTest, num3) {
 	ASSERT_EQ(a, -2);
 }
 
-TEST(yravTest, num4) {
+TEST(yravTest, num4) { // D < 0
 	double a;
 
 	double b;
