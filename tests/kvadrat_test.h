@@ -1,5 +1,5 @@
-#ifndef YRAV_H
-#define YRAV_H
+#ifndef KVADRAT_H
+#define KVADRAT_H
 
 #include <gtest/gtest.h>
 
@@ -56,4 +56,4 @@ TEST(yravTest, num4) {
 
 
 
-#endif // YRAV_H
+#endif // KVADRAT_H
