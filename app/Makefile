@@ -187,13 +187,13 @@ compiler_clean:
 
 ####### Compile
 
-main.o: main.c myfunc.h
+main.o: main.c myfunc.h yrav.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o main.o main.c
 
 myfunc.o: myfunc.c myfunc.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o myfunc.o myfunc.c
 
-yrav.o: yrav.c myfunc.h
+yrav.o: yrav.c yrav.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o yrav.o yrav.c
 
 ####### Install

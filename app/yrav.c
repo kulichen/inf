@@ -1,33 +1,18 @@
-#include "myfunc.h"
+#include "yrav.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int yrav(double a, double b, double c, double *x1, double *x2)
 {
-	if (a == 0 && b == 0 && c == 0) {
-		//x - любое
-		return -2;
-	}
-	if (a == 0 && b == 0 && c != 0) {
-		//выражение неверно с != 0
-		return -1;  
-	}
+	if (a == 0) return -1;
+
 	if (a != 0 && b == 0 && c == 0) {
 		//один корень
 		*x1 = 0;
 		return 1;
 	}
-	if (a == 0 && b != 0) {
-		if (c == 0) {
-			//один корень
-			*x1 = 0;
-			return 1;
-		}
-		//один корень
-		*x1 = (-c)/b;
-		return 1;
-	}
+
     double d = 0;
     d = b * b - 4 * a * c;
     if (d < 0) {

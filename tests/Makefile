@@ -211,7 +211,7 @@ main.o: main.cpp tst_test1.h \
 myfunc.o: ../app/myfunc.c ../app/myfunc.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o myfunc.o ../app/myfunc.c
 
-yrav.o: ../app/yrav.c ../app/myfunc.h
+yrav.o: ../app/yrav.c ../app/yrav.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o yrav.o ../app/yrav.c
 
 ####### Install

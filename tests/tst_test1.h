@@ -4,6 +4,7 @@
 /* using namespace testing; */
 extern "C" {
 #include "myfunc.h"
+#include "yrav.h"
 }
 
 TEST(test1, suite1)

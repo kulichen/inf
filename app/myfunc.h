@@ -5,6 +5,4 @@ int myfunc(int b);
 
 int fibonachi(int num);
 
-int yrav(double a, double b, double c, double *x1, double *x2);
-
 #endif // MYFUNC_H
