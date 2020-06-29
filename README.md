@@ -2,4 +2,4 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/kulichen/inf/badge.svg)](https://coveralls.io/github/kulichen/inf)
 
-[![Build Status](https://travis-ci.org/kulichen/inf.svg?branch=master)](https://travis-ci.org/kulichen/inf)
+[![Build Status](https://travis-ci.org/kulichen/lab1.svg?branch=master)](https://travis-ci.org/kulichen/lab1)
